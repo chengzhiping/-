@@ -1,0 +1,23 @@
+
+1、cd到自己存储的路径  创建一个文件夹（用作仓库）$ mkdir gitname
+2、cd 到刚创建的文件夹内 $ cd gitname
+3、$ git  init //将本地文件夹设定为仓库（repository）
+
+4、提交文件到仓库（把自己需要提交的文件放到gitname目录下）
+5、使用$ git add （完整的文件名）比如：$ git add readme.txt  (将readme.txt添加准备提交)
+6、使用 $git commit -m "引号里面添加你的修改记录"     正式提交
+
+
+7、$ git status   查看文件状态（查看文件是否有修改）
+8、$ git diff 查看修改前后的区别
+
+
+版本回退
+
+9、可以使用  $ git log 查看日志记录   或者使用  $ git log --pretty=oneline   于一行显示
+10、输入命令：$ git reset --hard HEAD^   回退上一个版本 ；
+	      $ git reset --hard HEAD^^   回退上上一个版本 ；	
+	      $ git reset --hard HEAD~100   回退上100个版本 ；
+              $ git reset --hard 2044be7c   回退到指定id的版本
+
+11、使用 $ git relog可以查看你执行过的记录
